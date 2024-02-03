@@ -1,0 +1,8 @@
+require "./observer"
+
+class Person < Subscriber
+    getter name
+    def initialize(@name : String, @email : String)
+        
+    end
+end

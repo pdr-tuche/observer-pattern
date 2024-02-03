@@ -1,0 +1,6 @@
+run = "crystal run main.cr"
+
+entrypoint = "main.cr"
+
+[nix]
+channel = "stable-22_11"
