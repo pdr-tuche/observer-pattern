@@ -12,11 +12,18 @@ class Plug
             raise Exception.new("cable not compatible")
         end
         @isPluged = true
-        puts "pluged"    
+        puts "pluged"
     end
 end
 
 class BrazilianPlug < Plug
+    def connectCable(cable : TypeLToTypeCAdapter)
+        if cable.compatiblePlugType != @plugType
+            raise Exception.new("cable not compatible")
+        end
+        @isPluged = true
+        puts "pluged"
+    end
 end
 
 class ItalianPlug < Plug
